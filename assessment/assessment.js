@@ -34,7 +34,9 @@ assessmentButton.onclick = () => {
 
     // widgets.js の設定
     const script = document.createElement('script');
+    script.setAttribute('async', '');
     script.setAttribute('src', "https://platform.twitter.com/widgets.js");
+    script.setAttribute('charset', 'utf-8');
     tweetDivided.appendChild(script);
 };
 const answers = [
